@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main class="home">
+      <section class="image-section">
+        <h2>Clickea la imagen</h2>
+        <div class="image-container">
+          <img id="image" src="./src/assets/img/dog.png" alt="" />
+        </div>
+      </section>
+      <section class="stickers-section">
+        <h2>Selecciona tus stickers</h2>
+        <div id="stickers-container">
+          <div>
+            <img src="./src/assets/img/sticker1.png" alt="" />
+            <input id="input-1" type="number" step="1" max="10" min="0" />
+          </div>
+          <div>
+            <img src="./src/assets/img/sticker2.png" alt="" />
+            <input id="input-2" type="number" step="1" max="10" min="0" />
+          </div>
+          <div>
+            <img src="./src/assets/img/sticker3.png" alt="" />
+            <input id="input-3" type="number" step="1" max="10" min="0" />
+          </div>
+        </div>
+        <div class="total">
+          <div id="full-stickers">Llevas demasiados stickers</div>
+          <div id="total-container">
+            Llevas
+            <div id="total-sum"></div>
+            Stickers
+          </div>
+        </div>
+      </section>
+      <section class="pass-section">
+        <h2>Ingresa el Password</h2>
+        <div id="pass-container">
+          <div class="selectors">
+            <select id="select-1"></select>
+            <select id="select-2"></select>
+            <select id="select-3"></select>
+          </div>
+          <div class="pass">
+            <button id="check-pass-button" class="pass-button">
+              <p class="text">Ingresar</p>
+            </button>
+          </div>
+          <div id="display"></div>
+          <div id="display-result"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./src/assets/js/app.js"></script>
+</html>
